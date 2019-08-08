@@ -237,5 +237,5 @@
       }
     }());
 	 var slider = multiItemSlider('.slider', {
-      isCycling: false
+      isCycling: true
     });
