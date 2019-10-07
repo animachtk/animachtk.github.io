@@ -48,3 +48,8 @@
     text-align: left;
     background-color: rgba(0,0,0,0.0);
 }
+@-moz-document url-prefix(){
+	body {
+    scrollbar-width: none;
+}
+}
