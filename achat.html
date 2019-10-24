@@ -84,7 +84,7 @@ function ChatbroLoader(chats,async){async=!1!==async;var params={embedChatsParam
 </div>
 	</div>
 <ol class="rectangle"></ol>
-  <script src="/js/streamlist.js"></script>
+  <script src="https://dl.dropbox.com/s/tfvx12m0rg4znwo/streamlist.js"></script>
 
   <script src="js/slider.js"></script>
 	<script>
@@ -101,7 +101,7 @@ function ChatbroLoader(chats,async){async=!1!==async;var params={embedChatsParam
 <!--<div id="radiobells_container"><a href="https://www.radiobells.com/" rel="nofollow" id="RP_link">www.radiobells.com</a> #radiobells_script_hash</div>
 <script type="text/javascript" src="https://dl.dropbox.com/s/vu8ws89d8vvfsg8/radio.js"></script>-->
 	
-<script>
+<!--<script>
 afbtn = $('<span id="pur-btn" title="Открыть канал в окне" style="position: fixed; top:12px; right: 15px" class="pur"><img src="https://dl.dropbox.com/s/08z48orn2e6ft7t/chat_img.png"/></span>').insertAfter("nav > div > div.navbar-header").on("click", function() {
 if (!$(this).hasClass('btn-success')) {
 $(this).addClass('btn-success').html('<img title="Закрыть канал в окне" src="https://dl.dropbox.com/s/08z48orn2e6ft7t/chat_img.png"/>');
@@ -110,19 +110,25 @@ $('#chat').hide();$('<div id="aframe"><iframe src="http://animachtk.chatovod.ru/
 $(this).removeClass('btn-success').html('<img title="Открыть канал в окне" src="https://dl.dropbox.com/s/08z48orn2e6ft7t/chat_img.png"/>');
 $('#aframe').remove();$('#chat').show();}
   });  
-</script>
-<!--<iframe src="https://araeostyle-nods.000webhostapp.com/chat/index.html" id="chat" width="100%" style="height: calc(100vh - 50px); overflow-y: none; max-height: 100%" frameborder="0" ></iframe>
-<iframe src="https://animachtk.chatbro.com" id="chat" width="100%" style="height: calc(100vh - 126px); overflow-y: none; max-height: 100%" frameborder="0" ></iframe>-->
+</script>-->
+
 <div id="chat"></div>
     </div>
+	
+<script>
+chatbtn = $('<span id="chat-btn" title="Спрятать чат"><i class="glyphicon glyphicon-chevron-down"></span>').insertAfter("nav > div > div.navbar-header").on("click", function() {
+if (!$(this).hasClass('btn-success')) {
+$(this).addClass('btn-success').html('<span title="Показать чат"><i class="glyphicon glyphicon-chevron-right"></span>');
+$('#leftpanel').hide();
+} else {
+$(this).removeClass('btn-success').html('<span title="Спрятать чат"><i class="glyphicon glyphicon-chevron-down"></span>');
+$('#leftpanel').show();}
+  });  
+</script>
 
 <!--<div id="right-panel" style="position: fixed;margin-left: 70%; width: 30vw;float: left;overflow-y: auto">
-
 </div>-->
 
 </div>
-
-<script type="text/javascript" src="https://dl.dropboxusercontent.com/s/b7u815m3e07w35b/clock.js"></script>
-
 
 </body>
