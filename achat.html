@@ -152,7 +152,7 @@ img {
 }
 </style>
 <div class="linewrap" id="messagebuffer" style="position: relative;background-color: rgba(0, 0, 0, 0.8);overflow:auto;height: calc(100vh - 160px);width: 100%;top: 0px;left: 0px;display: block;"></div>
-<div id="leftpane"><input type="text" id="WebChatNameID" class="html-chat-js-name"  placeholder="Укажите ваше имя..." ></div>
+<div id="leftpane"><input type="text" id="WebChatNameID"  placeholder="Укажите ваше имя..." ></div><input type="button" class="btn btn-sm btn-default"  onclick="CLIENT.name=$('#WebChatNameID').val();$('#WebChatNameID').remove();$(this).remove();" value="Подтвердить" >
 
 <script>
 var CLIENT={name:"Аноним"};
