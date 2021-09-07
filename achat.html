@@ -8,10 +8,10 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script id="chatBroEmbedCode">
+<!--<script id="chatBroEmbedCode">
 /* Chatbro Widget Embed Code Start */
 function ChatbroLoader(chats,async){async=!1!==async;var params={embedChatsParameters:chats instanceof Array?chats:[chats],lang:navigator.language||navigator.userLanguage,needLoadCode:'undefined'==typeof Chatbro,embedParamsVersion:localStorage.embedParamsVersion,chatbroScriptVersion:localStorage.chatbroScriptVersion},xhr=new XMLHttpRequest;xhr.withCredentials=!0,xhr.onload=function(){eval(xhr.responseText)},xhr.onerror=function(){console.error('Chatbro loading error')},xhr.open('GET','//www.chatbro.com/embed.js?'+btoa(unescape(encodeURIComponent(JSON.stringify(params)))),async),xhr.send()}/* Chatbro Widget Embed Code End */ChatbroLoader({encodedChatId: '4463j'});
-</script>
+</script>-->
   </head>
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 <link rel="stylesheet" href="https://dl.dropbox.com/s/euyvs64d3gojt40/a.css" >
@@ -109,8 +109,9 @@ $('#aframe').remove();$('#chat').show();}
   });  
 </script>-->
 
-<div id="chat"></div>
+<!--<div id="chat"></div>
     </div>
+	
 	
 <script>
 chatbtn = $('<span id="chat-btn" title="Спрятать чат"><i class="glyphicon glyphicon-chevron-down"></span>').insertAfter("nav > div > div.navbar-header").on("click", function() {
@@ -121,7 +122,43 @@ $('#leftpanel').hide();
 $(this).removeClass('btn-success').html('<span title="Спрятать чат"><i class="glyphicon glyphicon-chevron-down"></span>');
 $('#leftpanel').show();}
   });  
+</script>-->
+<style>
+.chat-picture {
+    max-height: 120px;
+}
+div {
+    display: block;
+}
+.linewrap, .linewrap code {
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #c8c8c8;
+    background: scroll #211F1A url(/css/img/muon_bg.jpg) repeat;
+}
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+img {
+    vertical-align: middle;
+}
+</style>
+<div class="linewrap" id="messagebuffer" style="position: relative;background-color: rgba(0, 0, 0, 0.8);overflow:auto;height: calc(100vh - 50px);width: 100%;top: 0px;left: 0px;display: block;"></div>
+<div id="leftpane"><input type="text" id="WebChatNameID" class="html-chat-js-name"  placeholder="Укажите ваше имя..." ></div>
+
+<script>
+var CLIENT={name:"Аноним"};
 </script>
+<script type="text/javascript" src="https://dl.dropbox.com/s/r4ugtr3mzkx0g5a/global_chat.js" ></script>	
 
 <!--<div id="right-panel" style="position: fixed;margin-left: 70%; width: 30vw;float: left;overflow-y: auto">
 </div>-->
