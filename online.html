@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" const="text/html;charset=UTF-8" />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="https://dl.dropbox.com/s/euyvs64d3gojt40/a.css" >
+    <link rel="stylesheet" type="text/css" href="https://dl.dropbox.com/s/3wima67t04ypal5/crstyle.css" >
+	
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <title>Animach Online</title>
+	<link id="chanfavicon" href="https://dl.dropboxusercontent.com/s/ypmx9scwx0nrhmj/o_07039a057ff6c194-2.ico" type="image/x-icon" rel="shortcut icon">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://www.youtube.com/iframe_api"></script>
+  </head>
+<style>
+@media (max-width: 1015px){
+
+#right-panel {display: none}
+}
+.dropdown-menu>li>a {color: white;}
+.dropdown-menu>li>a:hover {color: black;}
+.alert-info {
+    background-color: rgba(78,185,217,0.75);
+    border-color: rgba(21,79,96,0.75);
+    color: #ffffff;
+}
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 0px;
+}
+</style>
+  <body>
+<div id="wrap">
+<script src="js/navbar.js"></script>
+<div id="mainpage">
+<div class="col-lg-5 col-md-5" id="chatwrap">
+              <div id="chatheader"><i class="glyphicon glyphicon-chevron-down pull-left pointer" id="userlisttoggle" title="Show/Hide Userlist"></i>
+			  <span class="pointer" id="usercount"></span>
+			  <span id="feedback"></span>
+			  </div>
+              <div id="userlist" style=""></div>
+              <div class="linewrap" id="messagebuffer" style=""></div>
+              <input class="form-control" id="chatline" type="text" maxlength="320" style=""><button id="send-btn" class="btn btn-default btn-block" title="Отправить сообщение" style="width: 50px"><i class="glyphicon glyphicon-comment"></i></button>
+              <div class="input-group" id="guestlogin" style=""><span class="input-group-addon">Гостевой вход</span>
+                <input class="form-control" id="guestname" type="text" placeholder="Имя">
+              </div>
+            </div>
+
+<div class="col-lg-7 col-md-7" id="videowrap">
+            </div>
+<ol class="rectangle"></ol>
+<div class="input-group">
+                    <input class="form-control" id="mediaurl" type="text" placeholder="Media URL"><span class="input-group-btn">
+                      <button class="btn btn-default" id="queue_next">Next</button></span><span class="input-group-btn">
+                      <button class="btn btn-default" id="queue_end">At End</button></span>
+                  </div>  
+</div>
+</div> 
+
+    <script src="https://dl.dropbox.com/s/u2yc4x38xscxvhv/chat.js"></script>
+  </body>
+</html>
