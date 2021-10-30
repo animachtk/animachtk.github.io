@@ -35,9 +35,11 @@
   <body>
 <div id="wrap">
 <script src="js/navbar.js"></script>
-<div id="mainpage">
+<div id="mainpage" style="padding-left:15px;padding-right:15px">
+<div id="main" class="row">
 <div class="col-lg-5 col-md-5" id="chatwrap">
-              <div id="chatheader"><i class="glyphicon glyphicon-chevron-down pull-left pointer" id="userlisttoggle" title="Show/Hide Userlist"></i>
+              <div id="chatheader">
+			  <i class="glyphicon glyphicon-chevron-down pull-left pointer" id="userlisttoggle" title="Show/Hide Userlist"></i>
 			  <span class="pointer" id="usercount"></span>
 			  <span id="feedback"></span>
 			  </div>
@@ -48,15 +50,70 @@
                 <input class="form-control" id="guestname" type="text" placeholder="Имя">
               </div>
             </div>
-
 <div class="col-lg-7 col-md-7" id="videowrap">
             </div>
-<ol class="rectangle"></ol>
-<div class="input-group">
+</div>
+<div class="row" id="controlsrow">
+            <div class="col-lg-5 col-md-5" id="leftcontrols">
+              <div id="chat-controls" class="btn-group"><button id="smiles-btn" class="btn btn-sm btn-default" title="Показать смайлики"><img src="https://dl.dropbox.com/s/xas8745loy9ll13/Ziq8tHot.png" style="width: 18px;height: 18px;"></button>
+			  
+			  <button title="Стикеры" class="btn btn-sm btn-default" id="stiker-btn"><img src="https://raw.githubusercontent.com/citx/citx.github.io/master/img/kurumi-chan/kurumi-chan-006.png" height="16px"></button>
+			  
+            </div>
+</div>
+            <div class="col-lg-7 col-md-7" id="rightcontrols">
+              <div class="btn-group" id="plcontrol">
+                
+				<button class="btn btn-sm btn-default collapsed" id="showmediaurl" title="Add video from URL" data-toggle="collapse" data-target="#addfromurl" aria-expanded="false" style=""><span class="glyphicon glyphicon-plus"></span></button>
+
+                <button class="btn btn-sm btn-default collapsed" id="showcustomembed" title="Embed a custom frame" data-toggle="collapse" data-target="#customembed" aria-expanded="false" style="" disabled="disabled"><span class="glyphicon glyphicon-th-large"></span></button>
+</div>
+              <div class="btn-group pull-right" id="videocontrols">
+                <button class="btn btn-sm btn-default" id="voteskip" title="Voteskip" disabled="disabled"><span class="glyphicon glyphicon-step-forward"></span></button>
+              </div>
+            </div>
+          </div>
+
+
+		  
+<div class="row" id="playlistrow">
+            <div class="col-lg-5 col-md-5" id="leftpane">
+              <div class="row" id="leftpane-inner">
+                <div class="col-lg-12 col-md-12" id="pollwrap"></div>
+                <div class="col-lg-12 col-md-12" id="playlistmanagerwrap"></div>
+              </div>
+            </div>
+            <div class="col-lg-7 col-md-7" id="rightpane">
+<div class="row" id="rightpane-inner">
+                
+                <div class="plcontrol-collapse col-lg-12 col-md-12 collapse" id="addfromurl" aria-expanded="true" style="height: 110px;">
+                  <div class="vertical-spacer"></div>
+                  <div class="input-group">
                     <input class="form-control" id="mediaurl" type="text" placeholder="Media URL"><span class="input-group-btn">
-                      <button class="btn btn-default" id="queue_next">Next</button></span><span class="input-group-btn">
                       <button class="btn btn-default" id="queue_end">At End</button></span>
-                  </div>  
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input class="add-temp" type="checkbox">Add as temporary
+                    </label>
+                  </div>
+                  <div id="addfromurl-queue"></div>
+                </div>
+                
+                
+                <div class="col-lg-12 col-md-12" id="queuefail">
+                  <div class="vertical-spacer"></div>
+                </div>
+                <div class="col-lg-12 col-md-12">
+                  <ul class="videolist ui-sortable queue_sortable" id="queue" style=""></ul>
+                  <div id="plmeta" style=""><span id="plcount">0 items</span><span id="pllength">00:00</span></div>
+                </div>
+              </div>		
+				
+              </div>
+            </div>
+          </div>		  
+		   
 </div>
 </div> 
 
