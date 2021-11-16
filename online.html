@@ -91,7 +91,7 @@
                   <div class="vertical-spacer"></div>
                   <div class="input-group">
                     <input class="form-control" id="mediaurl" type="text" placeholder="Media URL"><span class="input-group-btn">
-                      <button class="btn btn-default" id="queue_end">At End</button></span>
+                      <button class="btn btn-default" id="queue_end">В конец</button></span>
                   </div>
                   <div class="checkbox">
                     <label>
@@ -99,6 +99,23 @@
                     </label>
                   </div>
                   <div id="addfromurl-queue"></div>
+                </div>
+		
+		<div class="plcontrol-collapse col-lg-12 col-md-12 collapse in" id="customembed" aria-expanded="true" style="">
+                  <div class="vertical-spacer"></div>
+                  <div class="input-group">
+                    <input class="form-control" id="customembed-title" type="text" placeholder="Заголовок (необязательно)"><span class="input-group-btn">
+                      <button class="btn btn-default" id="ce_queue_next">След.</button></span><span class="input-group-btn">
+                      <button class="btn btn-default" id="ce_queue_end">В конец</button></span>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input class="add-temp" type="checkbox">Не прикреплять видео
+                    </label>
+                  </div>
+                  Вставьте код видео в поле ниже и нажмите "След." или "В конец".
+                  Можно добавить видео с тегами <code>&lt;iframe&gt;</code> или <code>&lt;object&gt;</code>. <strong>СИНХРОНИЗАЦИЯ БУДЕТ НЕДОСТУПНА.</strong>
+                  <textarea class="input-block-level form-control" id="customembed-content" rows="3"></textarea>
                 </div>
                 
                 
