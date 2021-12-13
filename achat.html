@@ -166,8 +166,7 @@ if($('#NNMenu').length==0){
 $(
 '.nav.navbar-nav.navbar-right').append(`
 <li id="NNMenu">
-<span>${CLIENT.name} > </span>
-<a href="javascript:void(0)" onclick="localStorage.removeItem('GCUser_Name');location.reload();">Забыть никнейм</a>
+<a href="javascript:void(0)" title="${CLIENT.name}" onclick="localStorage.removeItem('GCUser_Name');location.reload();">Забыть никнейм</a>
 </li>
 `);
 }
