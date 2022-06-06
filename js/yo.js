@@ -21,18 +21,19 @@ let results=data.results||false;
             </span>
             </div>`;
             if($('.afilter').prop('checked')){
-            if(type===("anime"||"anime-serial")){
+            let re = /anime||anime-serial/;
+            if(re.test(type)){
             $(item).appendTo('#foundlist').on('click',()=>{
-            document.title = title + '(' + translation + ')';
+            document.title = title + ' (' + translation + ')';
             $('.index-seo').empty();
-            $('.index-seo').append(`<iframe style="height:calc(100vh - 100px);width:100%" src="${'https:'+link}"></iframe>`)
+            $('.index-seo').append(`<iframe id="kplayer" style="height:calc(100vh - 100px);width:100%" src="${'https:'+link}"></iframe>`)
             });
             }
             }else{
             $(item).appendTo('#foundlist').on('click',()=>{
             document.title = title + '(' + translation + ')';
             $('.index-seo').empty();
-            $('.index-seo').append(`<iframe style="height:calc(100vh - 100px);width:100%" src="${'https:'+link}"></iframe>`)
+            $('.index-seo').append(`<iframe id="kplayer style="height:calc(100vh - 100px);width:100%" src="${'https:'+link}"></iframe>`)
             });
             }
         }
