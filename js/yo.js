@@ -21,7 +21,7 @@ let results=data.results||false;
             </span>
             </div>`;
             $(item).appendTo('#foundlist').on('click',()=>{
-            document.title = title (translation);
+            document.title = title + '(' + translation + ')';
             $('.index-seo').empty();
             $('.index-seo').append(`<iframe style="height:calc(100vh - 100px);width:100%" src="${'https:'+link}"></iframe>`)
             });
