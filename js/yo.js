@@ -2,7 +2,7 @@ $('#search').on('click',()=>{
 $.get('https://kodikapi.com/search?token=b7cc4293ed475c4ad1fd599d114f4435&title='+$('#search-title').val()).done((data)=>{
 $('#foundlist').remove();
 $('#leftpanel').append(`
-<div id="foundlist"></div>
+<div id="foundlist" style="max-height:300px;overflow:auto"></div>
 `);
 let results=data.results||false;
     if(results.length>0){
