@@ -21,7 +21,7 @@ let results=data.results||false;
             </span>
             </div>`;
             if($('.afilter').prop('checked')){
-            let re = /anime||anime-serial/;
+            let re = /(anime)/;
             if(re.test(type)){
             $(item).appendTo('#foundlist').on('click',()=>{
             document.title = title + ' (' + translation + ')';
