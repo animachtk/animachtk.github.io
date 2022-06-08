@@ -28,7 +28,7 @@ $(`
   <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="background-color: rgba(0,0,0,0.7);">
     <li><a href="online">Анимач Онлайн</a></li>
     <li><a href="achat">Глобальный чат и стримы</a></li>
-    <li><a href="search">Поиск торрентов</a></li>
+    <li><a href="search">Поиск</a></li>
     <li><a href="asites">Аниме сайты</a></li>
     <li><a href="viewed">Просмотренное</a></li>
     <li role="separator" class="divider"></li>
