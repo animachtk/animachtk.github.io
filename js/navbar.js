@@ -11,12 +11,10 @@ $(`
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li>
-                    <a href="faq">FAQ</a>
-                </li>
-                <li>
-                    <a href="requests">Реквесты</a>
-                </li>
+  <a class="dropdown-toggle"  id="dropdownMenu0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Авторизация
+    <span class="caret"></span>
+  </a>
                 <li>
                     <a href="raspisanie">Расписание</a>
                 </li>
@@ -25,11 +23,17 @@ $(`
     Разделы
     <span class="caret"></span>
   </a>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu0" style="background-color: rgba(0,0,0,0.7);">
+    <li><a href="auth/login">Авторизоваться</a></li>
+    <li><a href="auth/register">Зарегистрироваться</a></li>	
+  </ul>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="background-color: rgba(0,0,0,0.7);">
     <li><a href="online">Анимач Онлайн</a></li>
     <li><a href="achat">Глобальный чат и стримы</a></li>
     <li><a href="search">Поиск</a></li>
     <li><a href="asites">Аниме сайты</a></li>
+    <li><a href="faq">FAQ</a></li>
+    <li><a href="requests">Реквесты</a></li>
     <li><a href="viewed">Просмотренное</a></li>
     <li role="separator" class="divider"></li>
     <li><a href="rules">Правила</a></li>
