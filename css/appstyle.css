@@ -1,0 +1,87 @@
+﻿.site-footer{display: none !important}
+.site-header-main{background-image: url('') }
+/*.wp-block-image img {
+    max-height: 200px;
+}*/
+.site {
+    background-color: #fff;
+    background: url(https://dl.dropbox.com/s/4ngveneyw39qkxp/Wallpaper-Abstract-Photos.jpg);background-size: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.site-inner {
+    background: #000000b3;
+}
+.site-branding .site-title a {
+    color: #288dad;
+}
+.site-description {
+	color: #d6d6d6;}
+body, button, input, select, textarea, .comment-form label, .comment-notes, .comment-awaiting-moderation, .logged-in-as, .form-allowed-tags {
+	color: #c3c3c3;}
+.entry-title a {
+    color: #7059b3;
+}
+.post-navigation, .widget {
+	border-top: 4px solid #ffffff;}
+.post-navigation a, a {
+    color: #94ccf3;
+    font-size: 16px;
+}
+.site-main > article {
+    background: rgba(0, 0, 0, 0.69);
+    border: 1px black solid;
+    padding: 15px;
+}
+.site {
+    margin: 0px;
+}
+
+body:not(.custom-background-image):before, body:not(.custom-background-image):after {
+	display: none;}
+
+body > div:nth-child(6){visibility: hidden !important}
+
+
+body > div:nth-child(14), body > div:nth-child(7), body > div:nth-child(13) > a > img, body > div:nth-child(13){visibility: hidden !important}
+.comment-author {
+    color: #6f51b7 !important;}
+.main-navigation a {
+    color: #2685a3 !important}
+.site-inner {
+    background: rgba(0, 0, 0, 0) !important;
+}
+.site {
+    background-color: rgba(0, 0, 0, 0) !important;
+    background: none !important;
+}
+body {
+    background: rgba(0, 0, 0, 0.35) !important;
+}
+
+padding-top: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+    background-color: rgba(0,0,0,0.0);
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+}
+::-webkit-scrollbar-corner {
+    background: 0 0;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(42, 59, 148, 0.5);
+    border: 0 #fff;
+}
+::-webkit-scrollbar-track, ::-webkit-scrollbar-track:hover {
+    background: #000a14;
+    border: 0 #fff;
+}
+.entry-title a {
+    font-size: 20px;
+}
