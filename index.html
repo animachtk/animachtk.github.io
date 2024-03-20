@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Анимач - главная</title>
-<link id="chanfavicon" href="https://dl.dropboxusercontent.com/s/seh6g0x971qn4na/favicon.png" type="image/x-icon" rel="shortcut icon">
+<link id="chanfavicon" href="img/favicon.png" type="image/x-icon" rel="shortcut icon">
 <meta name="viewport" content="width=device-width,user-scalable=no">
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   </head>
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-<link rel="stylesheet" href="https://dl.dropbox.com/s/euyvs64d3gojt40/a.css" >
+<link rel="stylesheet" href="css/a.css" >
 <link rel="stylesheet" href="css/a-style.css" >
 <link rel="stylesheet" href="css/slides.css">
 <style>
@@ -54,15 +54,15 @@
   <div id="news" style="padding-top: 0px; margin-bottom: 0px;text-align: left;background-color: rgba(0,0,0,0.0)">
 <div id="whatnew" style="background: rgba(0,0,0,0.6)">
 	<center>
-	<img src="https://dl.dropbox.com/s/jnir1hk2xv2g54l/atklogo.png" height="200px"/></br>
+	<img src="img/atklogo.png" height="200px"/></br>
 	<font color="red" size="6">Что нового?</font>
 	</center> <br />
 <div id="infostand"><div style="background-color: rgba(0,0,0,0.5);padding-left: 15px;padding-right: 15px">
 </div></div>
 <script>
-$.getScript('https://dl.dropbox.com/s/utmscp3j2ffp8ra/mainbanners.js');
-function ex_543(){$.get('https://dl.dropbox.com/s/zlq4uxz8lfj41um/news',function(e){e=eval(e);$('#infostand > div').empty();for(let a of e){$('<span><span class="date">'+a.date+'</span>'+a.title+'<br /></span>').appendTo('#infostand > div');}})}setTimeout(ex_543,45000);
-function ex_542(){$.get('https://dl.dropbox.com/s/ut109q942md5941/maininfo',function(e){e=eval(e);$('#connectinfo').empty();
+$.getScript('js/mainbanners.js');
+function ex_543(){$.get('https://api-animach.vercel.app/p?path=news',function(e){e=eval(e);$('#infostand > div').empty();for(let a of e){$('<span><span class="date">'+a.date+'</span>'+a.title+'<br /></span>').appendTo('#infostand > div');}})}setTimeout(ex_543,45000);
+function ex_542(){$.get('https://api-animach.vercel.app/p?path=mi',function(e){e=eval(e);$('#connectinfo').empty();
 for(let a of e){$('<center><font size="5" style="z-index: 5; background: red; color: white;padding: 5px">'+a.title+'</font></center><div style="background-color: rgba(0,0,0,0.5);padding: 15px;bottom: 15px"><font size=4>'+a.msg+'</font></div>').appendTo('#connectinfo')}})}
 ex_542();ex_543();
 </script>
@@ -77,5 +77,5 @@ VK.Widgets.Group("vk_groups", {mode: 4, wide: 1, width: "inherit", height: "560"
 </script>
 </div>
 </div>
-<script src="https://dl.dropbox.com/s/tr848z6miljc623/announcements.js"></script>
+<script src="js/announcements.js"></script>
 </body>
