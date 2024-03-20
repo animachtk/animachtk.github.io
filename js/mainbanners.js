@@ -1,34 +1,34 @@
-﻿ $(`
+ $(`
  <center><font size="5" style="z-index: 5; background: red; color: white;padding: 5px">Разделы</font></center>
   <div class="slider">
 
     <div class="slider__wrapper">
 
       <div class="slider__item">
-        <div class="video" style="background-image: url(https://dl.dropbox.com/s/49tzzlnxxc5e6yo/office-background-image_1631208.jpg);background-size: cover;">
+        <div class="video" style="background-image: url(img/office-background-image_1631208.jpg);background-size: cover;">
 		<div class="infoslide" style="background: black; border: 1px solid;border-style: solid;border-color: white;padding-left: 5px;margin-top: 15px;float: left;margin-right: 1vw;width:200px;height: 180px; width: 32%;position: relative;top: 15px;left: 50px;overflow-y: auto">
 		<a class="btn" style="background: white !important; color: black" href="online.html">Онлайн</a></br>
 		<font class="slidetext">В этом разделе вы можете совместно просматривать видео и общаться в чате.</font>
 		</div>
-<img class="slideimg" src="https://dl.dropbox.com/s/urh69nved5xufmo/cat_headphones.png"/>
+<img class="slideimg" src="img/cat_headphones.png"/>
 </div>
       </div>
       <div class="slider__item">
-        <div class="video" style="background-image: url(https://dl.dropbox.com/s/vv036uqbfnay6j0/cinema.jpg);background-size: cover;">
+        <div class="video" style="background-image: url(img/cinema.jpg);background-size: cover;">
 		<div class="infoslide" style="background: black; border: 1px solid;border-style: solid;border-color: white;padding-left: 5px;margin-top: 15px;float: left;margin-right: 1vw;width:200px;height: 180px; width: 35%;position: relative;top: 15px;left: 50px;">
 		<a class="btn" style="background: white !important; color: black"  href="https://animachtk.github.io/search.html">Поиск торрентов</a></br>
 		<font class="slidetext">В этом разделе вы можете найти и скачать торренты с аниме, фильмами и сериалами</font>
 		</div>
-<img class="slideimg" src="https://dl.dropbox.com/s/st8up7vdt6n07oo/5bb61fead93771663f6cad8a.png"/>
+<img class="slideimg" src="img/5bb61fead93771663f6cad8a.png"/>
 </div>
       </div>
       <div class="slider__item">
-        <div class="video" style="background-image: url(https://dl.dropbox.com/s/8xx7orzttlzomak/1057865d2330371.jpg);background-size: cover;">
+        <div class="video" style="background-image: url(img/1057865d2330371.jpg);background-size: cover;">
 		<div class="infoslide" style="background: black; border: 1px solid;border-style: solid;border-color: white;padding-left: 5px;margin-top: 15px;float: left;margin-right: 1vw;width:200px;height: 180px; width: 35%;position: relative;top: 15px;left: 50px;">
 		<a class="btn" style="background: white !important; color: black" href="https://animachtk.github.io/asites.html" style="text-decoration: none" >Аниме сайты</a></br>
 		<font class="slidetext">В этом разделе вы можете быстро путешествовать по популярным аниме сайтам</font>
 		</div>
-<img class="slideimg" src="https://dl.dropbox.com/s/33mw4nzpbolsfez/034.png"/>
+<img class="slideimg" src="img/034.png"/>
 </div>
       </div>
 
@@ -37,7 +37,7 @@
     <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
   </div>
 
-  <script src="https://animachtk.github.io/js/slider.js"></script>
+  <script src="js/slider.js"></script>
 </center>
 </div>
  
@@ -85,7 +85,7 @@
 </center>
 </div>
 `).insertAfter('#announcements');
-$.getScript('https://animachtk.github.io/js/slides.js');
+$.getScript('js/slides.js');
 $(`<style>
 .slide:nth-of-type(2){
   background-image: url(https://animach-si.000webhostapp.com/slides/img/backgrounds/slide01/background.php);background-size: cover;
