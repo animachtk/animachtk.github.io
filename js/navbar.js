@@ -33,7 +33,6 @@ $(`
     <li><a href="online">Анимач Онлайн</a></li>
     <li><a href="achat">Глобальный чат и стримы</a></li>
     <li><a href="search">Поиск</a></li>
-    <li><a href="asites">Аниме сайты</a></li>
     <li><a href="faq">FAQ</a></li>
     <li><a href="requests">Реквесты</a></li>
     <li><a href="viewed">Просмотренное</a></li>
