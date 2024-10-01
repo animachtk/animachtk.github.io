@@ -11,17 +11,6 @@ $(`
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-	    
-		<li class="dropdown" style="cursor: pointer;">
-  <a class="dropdown-toggle"  id="dropdownMenu0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    Авторизация
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu0" style="background-color: rgba(0,0,0,0.7);">
-    <li><a href="auth/login">Авторизоваться</a></li>
-    <li><a href="auth/register">Зарегистрироваться</a></li>	
-  </ul>
-		</li>
 <li><a href="raspisanie">Расписание</a></li>
 
 <li class="dropdown" style="cursor: pointer;">
