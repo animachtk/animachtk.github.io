@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" const="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/a.css" >
+    <link rel="stylesheet" type="text/css" href="css/crstyle.css" >
+    <link rel="stylesheet" type="text/css" href="css/video-js.css" >
+	
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js"></script>
+	  
+    <title>Animach Online</title>
+	<link id="chanfavicon" href="img/favicon.png" type="image/x-icon" rel="shortcut icon">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	  <script src="js/jquery-ui.js"></script>
+	<script src="https://www.youtube.com/iframe_api"></script>
+	  <script src="js/video-js.js"></script>
+  </head>
+<style>
+@media (max-width: 1015px){
+
+#right-panel {display: none}
+}
+.dropdown-menu>li>a {color: white;}
+.dropdown-menu>li>a:hover {color: black;}
+.alert-info {
+    background-color: rgba(78,185,217,0.75);
+    border-color: rgba(21,79,96,0.75);
+    color: #ffffff;
+}
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 0px;
+}
+</style>
+  <body>
+<div id="loadwrap" style="background-color: black;position: fixed;top: 0%;left: 0%;width: 100%;height: 100%;z-index: 9999;">
+	<center>
+		<div id="loading-row">
+			<span style="color:white">Идёт подключение,</span>
+			<div class="cssload-thecube">
+				<div class="cssload-cube cssload-c1"></div>
+				<div class="cssload-cube cssload-c2"></div>
+				<div class="cssload-cube cssload-c4"></div>
+				<div class="cssload-cube cssload-c3"></div>
+			</div>
+			<span style="color:white">пожалуйста подождите</span>
+		</div>
+	</center>
+	<style>
+	#loading-row{position: absolute;left: 25%;top: 30%;width: 50%;}.cssload-thecube {width: 73px;height: 73px;margin: 0 auto;margin-bottom: 40px;margin-top: 49px;position: relative;transform: rotateZ(45deg);-o-transform: rotateZ(45deg); 		-ms-transform: rotateZ(45deg); 		-webkit-transform: rotateZ(45deg); 		-moz-transform: rotateZ(45deg); } .cssload-thecube .cssload-cube { 	position: relative; 	transform: rotateZ(45deg); 		-o-transform: rotateZ(45deg); 		-ms-transform: rotateZ(45deg); 		-webkit-transform: rotateZ(45deg); 		-moz-transform: rotateZ(45deg); } .cssload-thecube .cssload-cube { 	float: left; 	width: 50%; 	height: 50%; 	position: relative; 	transform: scale(1.1); 		-o-transform: scale(1.1); 		-ms-transform: scale(1.1); 		-webkit-transform: scale(1.1); 		-moz-transform: scale(1.1); } .cssload-thecube .cssload-cube:before { 	content: ""; 	position: absolute; 	top: 0; 	left: 0; 	width: 100%; 	height: 100%; 	background-color: rgb(156,42,232); 	animation: cssload-fold-thecube 2.76s infinite linear both; 		-o-animation: cssload-fold-thecube 2.76s infinite linear both; 		-ms-animation: cssload-fold-thecube 2.76s infinite linear both; 		-webkit-animation: cssload-fold-thecube 2.76s infinite linear both; 		-moz-animation: cssload-fold-thecube 2.76s infinite linear both; 	transform-origin: 100% 100%; 		-o-transform-origin: 100% 100%; 		-ms-transform-origin: 100% 100%; 		-webkit-transform-origin: 100% 100%; 		-moz-transform-origin: 100% 100%; } .cssload-thecube .cssload-c2 { 	transform: scale(1.1) rotateZ(90deg); 		-o-transform: scale(1.1) rotateZ(90deg); 		-ms-transform: scale(1.1) rotateZ(90deg); 		-webkit-transform: scale(1.1) rotateZ(90deg); 		-moz-transform: scale(1.1) rotateZ(90deg); } .cssload-thecube .cssload-c3 { 	transform: scale(1.1) rotateZ(180deg); 		-o-transform: scale(1.1) rotateZ(180deg); 		-ms-transform: scale(1.1) rotateZ(180deg); 		-webkit-transform: scale(1.1) rotateZ(180deg); 		-moz-transform: scale(1.1) rotateZ(180deg); } .cssload-thecube .cssload-c4 { 	transform: scale(1.1) rotateZ(270deg); 		-o-transform: scale(1.1) rotateZ(270deg); 		-ms-transform: scale(1.1) rotateZ(270deg); 		-webkit-transform: scale(1.1) rotateZ(270deg); 		-moz-transform: scale(1.1) rotateZ(270deg); } .cssload-thecube .cssload-c2:before { 	animation-delay: 0.35s; 		-o-animation-delay: 0.35s; 		-ms-animation-delay: 0.35s; 		-webkit-animation-delay: 0.35s; 		-moz-animation-delay: 0.35s; } .cssload-thecube .cssload-c3:before { 	animation-delay: 0.69s; 		-o-animation-delay: 0.69s; 		-ms-animation-delay: 0.69s; 		-webkit-animation-delay: 0.69s; 		-moz-animation-delay: 0.69s; } .cssload-thecube .cssload-c4:before { 	animation-delay: 1.04s; 		-o-animation-delay: 1.04s; 		-ms-animation-delay: 1.04s; 		-webkit-animation-delay: 1.04s; 		-moz-animation-delay: 1.04s; }    @keyframes cssload-fold-thecube { 	0%, 10% { 		transform: perspective(136px) rotateX(-180deg); 		opacity: 0; 	} 	25%, 				75% { 		transform: perspective(136px) rotateX(0deg); 		opacity: 1; 	} 	90%, 				100% { 		transform: perspective(136px) rotateY(180deg); 		opacity: 0; 	} }  @-o-keyframes cssload-fold-thecube { 	0%, 10% { 		-o-transform: perspective(136px) rotateX(-180deg); 		opacity: 0; 	} 	25%, 				75% { 		-o-transform: perspective(136px) rotateX(0deg); 		opacity: 1; 	} 	90%, 				100% { 		-o-transform: perspective(136px) rotateY(180deg); 		opacity: 0; 	} }  @-ms-keyframes cssload-fold-thecube { 	0%, 10% { 		-ms-transform: perspective(136px) rotateX(-180deg); 		opacity: 0; 	} 	25%, 				75% { 		-ms-transform: perspective(136px) rotateX(0deg); 		opacity: 1; 	} 	90%, 				100% { 		-ms-transform: perspective(136px) rotateY(180deg); 		opacity: 0; 	} }  @-webkit-keyframes cssload-fold-thecube { 	0%, 10% { 		-webkit-transform: perspective(136px) rotateX(-180deg); 		opacity: 0; 	} 	25%, 				75% { 		-webkit-transform: perspective(136px) rotateX(0deg); 		opacity: 1; 	} 	90%, 				100% { 		-webkit-transform: perspective(136px) rotateY(180deg); 		opacity: 0; 	} }  @-moz-keyframes cssload-fold-thecube { 	0%, 10% { 		-moz-transform: perspective(136px) rotateX(-180deg); 		opacity: 0; 	} 	25%, 				75% { 		-moz-transform: perspective(136px) rotateX(0deg); 		opacity: 1; 	} 	90%, 				100% { 		-moz-transform: perspective(136px) rotateY(180deg); 		opacity: 0; 	} }
+	</style>
+</div>
+<div id="wrap">
+<script src="js/navbar.js"></script>
+
+<section id="mainpage">
+<div class="container-fluid">
+
+	<div class="row" id="motdrow">
+            <div class="col-lg-12 col-md-12">
+              <div class="well" id="motdwrap">
+                <button class="close pull-right" id="togglemotd" type="button"><span class="glyphicon glyphicon-minus"></span></button>
+                <div id="motd">
+<center>
+<font color="#836fc1" size="6">Добро пожаловать на наш канал!</font><br>
+<a href="https://t.me/animach_plus" target="_blank"><img src="https://dl.dropbox.com/scl/fi/ls60svn10bmyjdkse5vjs/t_logo.png?rlkey=eqjhok77ho9xgcoaesw6wr6dz" height="50px"></a>
+<a href="https://vk.com/animachtk" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/VK.com-logo.svg/1200px-VK.com-logo.svg.png" height="50px"></a>
+<a href="https://discord.gg/AMqpXUAM45" target="_blank"><img src="https://dl.dropbox.com/scl/fi/y5pdi2b7ejy793aiisnrj/discord.png?rlkey=r49nvbld8stae9j5fbhiq73tl" height="50px" /></a>	
+<br>
+<font color="#35ace1" size="4">Смотрим аниме и не только;)</font><br>
+</center>
+		</div>
+                <div class="clear"></div>
+              </div>
+            </div>
+          </div>
+	
+<div id="main" class="row">
+<div class="col-lg-5 col-md-5" id="chatwrap">
+              <div id="chatheader">
+			  <i class="glyphicon glyphicon-chevron-down pull-left pointer" id="userlisttoggle" title="Show/Hide Userlist"></i>
+			  <span class="pointer" id="usercount"></span>
+			  <span id="feedback"></span>
+			  </div>
+              <div id="userlist" style=""></div>
+              <div class="linewrap" id="messagebuffer" style=""></div>
+              <input class="form-control" id="chatline" type="text" maxlength="320" style=""><button id="send-btn" class="btn btn-default btn-block" title="Отправить сообщение" style="width: 50px"><i class="glyphicon glyphicon-comment"></i></button>
+              <div class="input-group" id="guestlogin" style=""><span class="input-group-addon guest-nick-btn">Гостевой вход</span>
+                <input class="form-control" id="guestname" type="text" placeholder="Имя">
+              </div>
+            </div>
+<div class="col-lg-7 col-md-7" id="videowrap">
+            </div>
+</div>
+<div class="row" id="controlsrow">
+            <div class="col-lg-5 col-md-5" id="leftcontrols">
+              <div id="chat-controls" class="btn-group"><button id="smiles-btn" class="btn btn-sm btn-default" title="Показать смайлики"><img src="https://dl.dropbox.com/scl/fi/a7x2ru7g3bg963xnz1f7a/Ziq8tHot.png?rlkey=s8lbts0gcgh8hquipu6vb4xmw" style="width: 18px;height: 18px;"></button>
+			  
+			  <button title="Стикеры" class="btn btn-sm btn-default" id="stiker-btn"><img src="https://raw.githubusercontent.com/citx/citx.github.io/master/img/kurumi-chan/kurumi-chan-006.png" height="16px"></button>
+			  
+            </div>
+<div class="image" style="position: fixed;right: 0px;bottom: -5px;z-index: -1"><script src="js/pic.js"></script></div>
+</div>
+            <div class="col-lg-7 col-md-7" id="rightcontrols">
+              <div class="btn-group" id="plcontrol">
+                
+		<button class="btn btn-sm btn-default collapsed" id="showmediaurl" title="Add video from URL" data-toggle="collapse" data-target="#addfromurl" aria-expanded="false" style=""><span class="glyphicon glyphicon-plus"></span></button>
+
+                <button class="btn btn-sm btn-default collapsed" id="showcustomembed" title="Embed a custom frame" data-toggle="collapse" data-target="#customembed" aria-expanded="false" style=""><span class="glyphicon glyphicon-th-large"></span></button>
+</div>
+              <div class="btn-group pull-right" id="videocontrols">
+                <button class="btn btn-sm btn-default" id="voteskip" title="Voteskip" disabled="disabled"><span class="glyphicon glyphicon-step-forward"></span></button>
+              </div>
+            </div>
+          </div>
+
+
+		  
+<div class="row" id="playlistrow">
+            <div class="col-lg-5 col-md-5" id="leftpane">
+              <div class="row" id="leftpane-inner">
+                <div class="col-lg-12 col-md-12" id="pollwrap"></div>
+                <div class="col-lg-12 col-md-12" id="playlistmanagerwrap"></div>
+              </div>
+            </div>
+            <div class="col-lg-7 col-md-7" id="rightpane">
+<div class="row" id="rightpane-inner">
+                
+                <div class="plcontrol-collapse col-lg-12 col-md-12 collapse" id="addfromurl" aria-expanded="true" style="height: 110px;">
+                  <div class="vertical-spacer"></div>
+                  <div class="input-group">
+                    <input class="form-control" id="mediaurl" type="text" placeholder="Media URL"><span class="input-group-btn">
+                      <button class="btn btn-default" id="queue_end">В конец</button></span>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input class="add-temp" type="checkbox">Add as temporary
+                    </label>
+                  </div>
+                  <div id="addfromurl-queue"></div>
+                </div>
+		
+		<div class="plcontrol-collapse col-lg-12 col-md-12 collapse" id="customembed" aria-expanded="true" style="">
+                  <div class="vertical-spacer"></div>
+                  <div class="input-group">
+                    <input class="form-control" id="customembed-title" type="text" placeholder="Заголовок (необязательно)"><span class="input-group-btn">
+                      <button class="btn btn-default" id="ce_queue_next">След.</button></span><span class="input-group-btn">
+                      <button class="btn btn-default" id="ce_queue_end">В конец</button></span>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input class="add-temp" type="checkbox">Не прикреплять видео
+                    </label>
+                  </div>
+                  Вставьте код видео в поле ниже и нажмите "След." или "В конец".
+                  Можно добавить видео с тегами <code>&lt;iframe&gt;</code> или <code>&lt;object&gt;</code>. <strong>СИНХРОНИЗАЦИЯ БУДЕТ НЕДОСТУПНА.</strong>
+                  <textarea class="input-block-level form-control" id="customembed-content" rows="3"></textarea>
+                </div>
+                
+                
+                <div class="col-lg-12 col-md-12" id="queuefail">
+                  <div class="vertical-spacer"></div>
+                </div>
+                <div class="col-lg-12 col-md-12">
+                  <ul class="videolist ui-sortable" id="queue" style=""></ul>
+                  <div id="plmeta" style=""><span id="plcount">0 items</span><span id="pllength">00:00</span></div>
+                </div>
+              </div>		
+				
+              </div>
+            </div>
+          </div>		  
+
+</div>
+</section>
+</div> 
+<div id="pmbar"></div>
+    <script src="https://dl.dropbox.com/s/vzoo4v6g3977f3yeox4hh/chat.js?rlkey=b0x6nyxo67zfj1icwislzcp91&st=3974uqz7"></script>
+  </body>
+</html>
