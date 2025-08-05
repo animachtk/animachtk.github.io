@@ -272,22 +272,19 @@ li.ui-sortable-helper, li.ui-sortable-placeholder + li.queue_entry {
     cursor: pointer;
 }
 
-.userlist_abu {
-    color: #800080!important;
-    font-weight: bold!important;
-}
-.userlist_siteadmin {
-    color: #cc0000!important;
+
+.userlist_master {
+    color: #cc0000;
     font-weight: bold!important;
 }
 
 .userlist_owner {
-    color: #0000cc!important;
+    color: #0000cc;
     font-weight: bold!important;
 }
 
 .userlist_op {
-    color: #2266AA!important;
+    color: #2266AA;
 }
 
 .userlist_guest {
@@ -890,4 +887,5 @@ input.form-control[type="email"], textarea.form-control {
 #newmessages-indicator-bghack {
     background: rgb(16, 16, 16);
     background: rgba(16, 16, 16, 0.9);
+
 }
