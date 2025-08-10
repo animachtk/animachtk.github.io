@@ -1,5 +1,6 @@
 [
 {"name":"strike","source":"~~(.+?)~~","flags":"g","replace":"<s>$1</s>","active":true,"filterlinks":false},
+{"name":"inline spoiler","source":"\/sp (.*?)","flags":"gi","replace":"<span class=\"spoiler\">$1</span>","active":true,"filterlinks":false},
 {"name":"inline spoiler","source":"\\[sp\\](.*?)\\[\\/sp\\]","flags":"gi","replace":"<span class=\"spoiler\">$1</span>","active":true,"filterlinks":false},
 {"name":"partial quote","source":"&gt;(.+?)$","flags":"g","replace":"<span class=\"quote\">&gt;$1 </span>","active":true,"filterlinks":false},
 {"name":"monospace","source":"`(.+?)`","flags":"g","replace":"<code>$1</code>","active":true,"filterlinks":false},
@@ -13,3 +14,4 @@
 {"name":"webm-preview","source":"(http|https):\\/\\/(2ch)+\\.(hk|re|pm|tf|wf|yt|so)\\/(.+?)\\/(src)\\/(.+?)\\/(.+?)(.webm|.mp4)","flags":"gi","replace":"<a target=\"_blank\" href=\"$&\" data-featherlight=\"http$1://$2\"><img src=\"$1://$2.$3/$4/thumb/$6/$7s.jpg\" class=\"webm-preview\" style=\"max-height: 100px;border: 1px solid;border-style: dashed;border-color: orange\" /></a>","active":true,"filterlinks":true},
 {"name":"sibnet-preview","source":"(http|https):\\/\\/(video\\.sibnet\\.ru)\\/(video)(.+?)\\-(.+?)$","flags":"gi","replace":"<a target=\"_blank\" href=\"$&\"><img class=\"sibnet-preview\" src=\"https://video.sibnet.ru/upload/cover/video_$4_0.jpg\" style=\"max-height: 100px;border: 1px solid;border-style: dashed;border-color: orange\" /></a>","active":true,"filterlinks":true}
 ]
+
